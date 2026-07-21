@@ -88,13 +88,13 @@ task.spawn(function()
             count += 1
 
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Backspace, false, game)
-            task.wait(2)
+            task.wait(1)
             VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Backspace, false, game)
 
             status.Text = string.format("Running : %d/%d", count, maxPress)
             print(("Backspace: %d/%d"):format(count, maxPress))
 
-            task.wait(2)
+            task.wait(1)
         end
 
         running = false
